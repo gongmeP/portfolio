@@ -1,0 +1,230 @@
+@charset "utf-8";
+
+/* 상단메뉴 */
+.menu {
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    position: absolute;
+    z-index: 1;
+}
+
+.topmenu {
+    width: 1200px;
+    height: inherit;
+    margin: 0 auto;
+    /* background-color: antiquewhite; */
+}
+
+.logo {
+    width: 250px;
+    height: inherit;
+    float: left;
+
+}
+
+.logocss {
+    width: 120px;
+    height: 60px;
+    object-fit: contain;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.top_s_menu {
+    float: right;
+    width: 600px;
+    height: inherit;
+}
+
+.top_s_menu>li {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 17px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    float: left;
+    cursor: pointer;
+}
+
+.top_s_menu>li:hover {
+    color: red;
+}
+
+.top_s_menu>li:nth-of-type(5) {
+    color: red;
+}
+
+
+/* 상단 메뉴 끝 */
+
+/* 이벤트 */
+.event {
+    width: 100%;
+    height: 1080px;
+    position: relative;
+    /* background-color: black; */
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.ad {
+    max-width: 1920px;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    margin-left: -960px;
+}
+
+.event_info {
+    width: 800px;
+    height: 720px;
+    position: absolute;
+    z-index: 1;
+    top: 130px;
+    left: 50%;
+    margin-left: -400px;
+    padding-left: 50px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10%;
+}
+
+.info {
+    width: 700px;
+    height: inherit;
+    margin-top: 10px;
+}
+
+.info>ul {
+    width: inherit;
+    height: auto;
+
+}
+
+.info>ul>li {
+    width: inherit;
+    height: 50px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+
+.info>ul>li>input {
+    width: inherit;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid #2D77F5;
+    text-indent: 8px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.info>ul>li>label {
+    line-height: 50px;
+    text-align: left;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.info>ul>li>label>input {
+    box-sizing: border-box;
+    width: 20px;
+    height: 20px;
+    vertical-align: -3px;
+}
+
+.info>ul>li:nth-last-of-type(1)>input {
+    background-color: #2D77F5;
+    color: white;
+}
+.info>ul>li:nth-last-of-type(1)>input:hover{
+    background-color: #004ccf;
+
+}
+
+.info>ul>li:nth-of-type(1) {
+    height: 370px;
+}
+
+.avt_logo {
+    width: 50%;
+    object-fit: contain;
+}
+
+/* 이벤트 끝 */
+
+/* 카피라이터 시작 */
+.copy {
+    width: 100%;
+    height: 180px;
+    background-color: white;
+    z-index: 2;
+    position: absolute;
+    bottom: 11px;
+}
+
+.copyview {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    font-size: 13px;
+}
+
+.copyview>ul:nth-of-type(1) {
+    width: 1200px;
+    height: 60px;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 400;
+    border-bottom: 1px solid black;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.copyview>ul:nth-of-type(1)>li {
+    width: 100px;
+    height: inherit;
+    line-height: 60px;
+    text-align: center;
+    cursor: pointer;
+    float: left;
+}
+
+.copyview>ul:nth-of-type(1)>li:hover {
+    color: blue;
+}
+
+.copyview>ul:nth-of-type(1)>li:nth-of-type(4) {
+    width: 200px;
+}
+
+.copyview>ul:nth-of-type(1)>li:nth-of-type(6) {
+    width: 150px;
+    font-weight: 700;
+}
+
+.copyview>ul:nth-of-type(1)>li:nth-of-type(8) {
+    width: 150px;
+}
+
+.copyview>ul:nth-of-type(2) {
+    width: 1200px;
+    height: 100px;
+    text-align: center;
+    margin: 0 auto;
+    padding-left: 5px;
+}
+
+.copyview>ul:nth-of-type(2)>li {
+    height: 25px;
+    line-height: 25px;
+    width: 1200px;
+    /* display: inline-block; */
+    text-align: left;
+}
+
+.opnum:hover {
+    color: blue;
+}
+
+/* 카피라이터 종료 */

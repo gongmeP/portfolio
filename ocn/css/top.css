@@ -1,0 +1,69 @@
+@charset "utf-8";
+
+.topbox {
+    width: inherit;
+    /* border: 1px solid black; */
+    height: 35px;
+
+}
+
+.topbox>div {
+    width: 80px;
+    height: 35px;
+    float: left;
+    background-image: url(../images/tving_logo.png);
+    background-repeat: no-repeat;
+    background-size: 80px 35px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.topbox>ul {
+    float: right;
+    width: 440px;
+    height: 35px;
+
+}
+
+.topbox>ul>li {
+    float: left;
+    width: 100px;
+    height: inherit;
+    font-size: 14px;
+    line-height: 35px;
+    text-align: center;
+    margin-right: 10px;
+    cursor: pointer;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+   
+
+}
+.topbox>ul>li:nth-of-type(4){
+    margin-right:0;
+}
+
+.topbox>ul>li:hover {
+    font-weight: 600;
+}
+
+
+.topbox2 {
+    float: right;
+    display: none;
+}
+
+
+.che {
+    width: 340px;
+    height: 35px;
+    box-sizing: border-box;
+    margin-top: -3px;
+}
+
+.chbtn {
+    width: 50px;
+    height: 35px;
+    background-color: black;
+    color: white;
+}
