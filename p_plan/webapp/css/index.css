@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+.main_sc{
+	margin: 0 auto;
+	width: 500px;
+	height: auto;
+}
+
+.title_login{
+	width: 500px;
+	height: 120px;
+	font-size: 40px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 120px;
+	text-decoration: underline;
+}
+
+.main_ulcss {
+	width: 500px;
+	height: auto;
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	color:#BDBDBD;
+}
+
+.main_ulcss > li {
+	margin-bottom: 5px;
+	height: 48px;
+	box-sizing: border-box;
+	line-height: 48px;
+	text-align: center;
+	font-weight: normal;
+}
+
+.main_ulcss > li > input {
+	width: 400px;
+	height: 48px;
+	box-sizing: border-box;
+	position: relative;
+	top: -3px;
+	border-radius: 5px;
+}
+
+.main_ulcss > li:nth-of-type(1) {
+	color: #BDBDBD;
+}
+
+.main_ulcss > li > input[type="text" i]{
+	border: 3px solid #BDBDBD;
+	text-indent: 10px;
+	
+}
+
+.main_ulcss > li > input[type="password" i]{
+	border: 3px solid #BDBDBD;
+	text-indent: 10px;
+}
+
+.main_ulcss > li:nth-of-type(4) > input[type="submit" i] {
+	background-color: #4F84F5;
+	color:white;
+} 
+
+.search_ulcss {
+	margin:0 auto;
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.search_ulcss > li {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.search_ulcss > li:not(:last-child)::after {
+  content: "";
+  width: 1px;
+  height: 70%;
+  background-color: gray;
+  position: absolute;
+  right: 0;
+  top: 15%;
+}
+
+
+.li_login {
+  position: relative;
+}
+
+.li_login::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  width: 400px;
+  height: 1px;
+  background-color: black;
+  z-index: -1;
+}
+
+.li_login::after {
+  content: "간편 로그인";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 0 10px;
+}
+
+.main_ulcss > li:nth-of-type(7){
+	height: 80px;
+}
+
+
+.login_ulcss{
+	margin: 0 auto;
+	display: flex;
+  	justify-content: space-between;
+  	width: 400px;
+  	height: 80px;
+}
+
+
+
+.login_ulcss > li{
+	width: 80px;
+  	height: 80px;
+  	border-radius: 80px;
+  	border: 1px solid black;
+  	box-sizing: border-box;
+  	display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.img_size{
+	width: 40px;
+	height: 40px;
+}
+
+
+.main_ulcss > li:nth-of-type(8) > input[type="button" i] {
+	background-color: white;
+	border:3px solid #4F84F5;
+	box-sizing:border-box;
+	color:#4F84F5;
+} 

@@ -1,0 +1,174 @@
+@charset "UTF-8";
+
+* {
+	box-sizing: border-box;
+	font-family: 'Noto Sans KR', sans-serif;
+	
+}
+
+.imgs{
+	vertical-align: -10px;
+	margin-right: 10px;
+}
+
+.main {
+	width: 1200px;
+	height: auto;
+	margin: 0 auto;
+}
+
+.main>p {
+	margin: 0 auto;
+	margin-top: 60px;
+	margin-bottom: 50px;
+	width: inherit;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	font-size: 36px;
+	font-weight: bolder;
+	text-decoration: underline;
+}
+
+.ul1 {
+	width: 900px;
+	height: auto;
+	margin: 0 auto;
+	line-height: 40px;
+	margin-bottom: 60px;
+}
+
+.ul1>li {
+	height: 40px;
+	width: inherit;
+	border-bottom: 1px solid black;
+	display: flex;
+}
+
+.ul1>li:nth-of-type(1)>div,
+.ul1>li:nth-of-type(3)>div{
+	width: 450px;
+	height: inherit;
+}
+.ul1>li:nth-of-type(1)>div:nth-of-type(2),
+.ul1>li:nth-of-type(3)>div:nth-of-type(2){
+	text-align: right;
+}
+
+.ul1>li:nth-of-type(1)>div:nth-of-type(2){
+	font-size: 20px;
+	font-weight: 300;
+}
+.ul1>li:nth-of-type(3)>div:nth-of-type(2){
+	font-size: 18px;
+	font-weight: 500;
+}
+
+
+
+.ul1>li:nth-of-type(1), .ul1>li:nth-of-type(4), .ul1>li:nth-of-type(9) {
+	margin-top: 40px;
+	height: 80px;
+	line-height: 80px;
+	font-size: 25px;
+	font-weight: 500;
+}
+
+
+
+.ul1>li>div {
+	width: 200px;
+	height: inherit;
+}
+
+.btnli {
+	width: 900px;
+	height: inherit;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.btnli>input {
+	width: 150px;
+	height: 40px;
+	margin-right: 20px;
+	border: 1px solid black;
+	font-size: 18px;
+	font-weight: 300px;
+	background-color: white;
+	border-radius: 20px;
+	cursor: pointer;
+}
+
+.btnin{
+	width: 150px;
+	height: 40px;
+}
+
+.lilast {
+	width: 450px;
+	height: inherit;
+}
+
+.lilast>div>input {
+	width: 300px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	
+}
+.lilast>div {
+	width: 450px !important;
+	text-align: center;
+}
+
+.btnlis {
+	margin-top: 20px !important;
+	margin-bottom: 20px !important;
+}
+.lastbtnin{
+	width : 500px;
+	margin-top: 60px;
+	display: flex;
+	justify-content: center;
+	border-bottom: 0px !important;
+}
+.lastbtn, .lbt{
+	width: 250px;
+	height: 70px;
+	background-color: #1e1f21;
+	color: white;
+	font-size: 20px;
+	font-weight: 300px;
+	margin-right: 10px;
+	float: left;
+}
+
+.lilast, .btnlis , .ul1>li:nth-of-type(3){
+	border-bottom: 0px !important;
+}
+
+
+
+.btnin{
+	height: 60px !important;
+}
+.btnin > input {
+	width: 150px;
+	height: 40px;
+	margin-right: 20px;
+	border: 1px solid black;
+	font-size: 18px;
+	font-weight: 300px;
+
+	border-radius: 20px;
+	cursor: pointer;
+	margin-top: 10px;
+}
+.btnin > div {
+	width: 700px !important;
+	line-height: 60px;
+	text-align: right;
+	
+}

@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+.top_header{
+	width: 1200px;
+	height: 70px;
+	margin: 0 auto;
+	color: white;
+	background: #1e1f21;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logodiv{
+	width: 250px;
+	height: 40px;
+	background-image: url("../logo/logo.png");
+	background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.top_header > ul{
+	display: flex;
+	width: auto;
+	height: 40px;
+	align-items: center;
+	justify-content: center;
+}
+
+
+
+.top_ulcss1 > li{
+	width: 125px;
+	height: inherit;
+	line-height: 40px;
+	font-size: 17px;
+	text-align: center;
+	cursor: pointer;
+}
+
+
+
+.top_ulcss2 > li{
+height: 40px;
+display: flex;
+align-items: center;
+justify-content: flex-end;
+margin-left: 15px;
+margin-right: 5px;
+}
+
+.top_ulcss2 > li > img{
+	width: 35px;
+	height: 35px;
+	line-height: 35px;
+	margin-right: 3px;
+}
+
+.ico{
+	fill: currentColor;
+}
+
+.top_ulcss2 > li > input{
+	width: 90px;
+	height: 35px;
+	border: 1px solid #ffffff;
+	color:white;
+	background-color: #1e1f21;
+	margin-right: 5px;
+	font-size: 14px;
+}
+
+.copyright{
+	margin: 0 auto;
+	width: 1200px;
+	height: 70px;
+	background: #1e1f21;
+	display: flex;
+	color: white;
+	font-size: 14px;
+	align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.copyright > ul{
+	text-align: center;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+#loginbaner0 > div {
+	
+	font-size: 15px;
+}

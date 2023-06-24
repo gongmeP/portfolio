@@ -1,0 +1,24 @@
+@charset "UTF-8";
+.ulcss{
+	width: 1200px;
+	height: auto;
+	margin: 0 auto;
+	text-align: center;
+}
+.ulcss > li:first-of-type{
+	height: 50px;
+	font-size: 36px;
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-weight: bold;
+	text-decoration: underline;
+	margin-bottom: 60px;
+}
+img{
+	width: 35px;
+	height: 35px;
+}
+.ulcss > li:nth-of-type(3){
+	font-size: 14px;
+	color: #BDBDBD;
+		
+}

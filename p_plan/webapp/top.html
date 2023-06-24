@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="./css/default.css?v=1">
+<link rel="stylesheet" type="text/css" href="./css/font.css?v=1">
+<link rel="stylesheet" type="text/css" href="./css/top.css?v=1">
+</head>
+<body>
+
+
+<header class="top_header">
+<div></div><!-- 로고 -->
+<ul class="top_ulcss1">
+	<li>이용안내</li>
+	<li onclick="reserve_go()">예약하기</li>
+	<li>예약확인</li>
+	<li>마이페이지</li>
+	<li>그린포인트</li>
+</ul>
+
+<ul class="top_ulcss2">
+	<li><img src="./ico/person.svg" class="ico"><input type="button" value="로그인" onclick="login_go()"></li>
+	<li><img src="./ico/group.svg" class="ico"><input type="button" value="회원가입" onclick="join_go()"></li>
+</ul>
+</header>
+<main style="width: 1200px; height: 500px;">
+
+</main>
+
+<footer class="copyright">
+<ul>
+   <li>(국립공원공단) 강원도원주시혁신로22 (우)26466 사업자등록번호: 211-82-06541 예약안내: 1670-9201(평일09-18시, 점심시간12-13시) FAX: 033-769-9579 이메일: csnp@knps.or.kr</li>
+   <li>Copyright @ Korea National Park Service. All Rights Reserved.</li>
+</ul>
+</footer>
+
+</body>
+<script>
+function reserve_go(){	
+ location.href="./reserve.html";
+}
+
+function login_go(){	
+	 location.href="./index.html";
+	}
+	
+function join_go(){	
+	 location.href="./join.html";
+	}
+</script>
+</html>

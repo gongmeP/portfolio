@@ -1,0 +1,149 @@
+@charset "UTF-8";
+.ulcss{
+	width: 800px;
+	height: auto;
+	margin: 0 auto;
+}
+.ulcss > li{
+	width: 800px;
+	height: 45px;
+	font-size: 16px;
+}
+.ulcss > li:first-of-type{
+	height: 120px;
+	text-decoration: underline;
+	text-align: center;
+	font-size: 40px;
+	font-family: 'IBM Plex Sans', sans-serif;
+}
+.ulcss > li:nth-of-type(2){
+	text-align: center;
+}
+
+.ulcss1{
+	display: flex;
+	justify-content: space-between;
+}
+.ulcss1 > li:first-of-type{
+	text-decoration: underline;
+	font-weight: bold;
+}
+.ulcss1 > li:nth-of-type(2){
+	color: #BDBDBD;
+}
+	
+.ulcss > li:nth-of-type(2), .ulcss > li:nth-of-type(4){
+	height: 50px;
+	
+}
+.ulcss > li:nth-of-type(4), .ulcss > li:nth-of-type(7){
+	text-decoration: underline;
+	font-weight: bold;
+}
+.ulcss > li:nth-of-type(5), .ulcss > li:nth-of-type(8){
+	height: 180px;
+	border: 1px solid black;
+}
+.ulcss > li:nth-of-type(6), .ulcss > li:nth-of-type(9){
+	height: 30px;
+	text-align: right;
+}
+.ulcss > li > div{
+	width: inherit;
+	height: 180px;
+	border: 1px solid black;
+	overflow-y: auto;
+}
+	.olcss {
+	width: 800px;
+	height: 500px;
+	margin: 0 auto;
+	
+}
+.olcss > ul {
+	display: flex;
+}
+.per {
+	width: 200px;
+	height: 45px;
+	text-decoration: underline;
+	font-size: 16px;
+	color: #000000;
+}
+.i1{
+	width: 200px;
+	height: 40px;
+	line-height: 40px;
+	background-color: #BAE9F4;
+	text-indent: 10px;
+	font-size: 16px;
+	color: black;
+	margin-bottom: 5px;
+	margin-left: 10px;
+}
+.input1{
+	width: 300px;
+	height: 40px;
+	font-size: 14px;
+	color: #000000;
+	border: 1px solid #4F84F0;
+	margin-left: 10px;
+}
+.input2{
+	width: 400px;
+	height: 40px;
+	font-size: 14px;
+	color: #000000;
+	border: 1px solid #4F84F0;
+	margin-left: 10px;
+}
+.same{
+	width: 150px;
+	height: 40px;
+	font-size: 14px;
+	background-color: #4F84F5;
+	color: #FFFFFF;
+	margin-left: 10px;
+	border-radius: 4px;
+}
+.check1{
+	width: 35px;
+	height: 35px;
+	line-height: 40px;
+	margin-left: 10px;
+	cursor: pointer;
+}
+.check2{
+	width: 35px;
+	height: 35px;
+	line-height: 40px;
+	margin-left: 10px;
+	margin-bottom: 25px;
+	cursor: pointer;
+}
+.btn{
+	margin: 0 auto;
+	width: 400px;
+	height: 48px;
+	border-radius: 4px;
+	font-size: 16px;
+	cursor: pointer;
+	background-color: #4F84F5;
+	color: white;
+	margin-left: 200px;
+}
+em{
+	margin-left: 10px;
+	font-style: normal;
+	font-size: 14px;
+	line-height: 40px;
+	color: #BDBDBD;
+}
+.em1{
+	line-height: 40px;
+	color: #000000;
+	font-size: 14px;
+}
+.che1{
+	cursor: pointer;
+}
