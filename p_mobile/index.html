@@ -1,0 +1,53 @@
+<?php
+    $v = date("YmdHis");
+?>
+<?php
+include "./session.php";
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mobile</title>
+    <script src="./jquery.js?v=<?php echo $v?>"></script>
+    <script src="./jquery-ui.js?v=<?php echo $v?>"></script>
+    <link rel="stylesheet" type="text/css" href="./index.css?v=<?php echo $v?>">
+    <!--index css : 폰트관련된 내용은 여기서 확인-->
+    <link rel="stylesheet" type="text/css" href="./default.css?v=<?php echo $v?>">
+    <!--디폴트 css : ul,ol,span등 기본속성등록-->
+</head>
+<body>
+    <!--
+        로그인,회원가입
+    -->
+    <!-- 340 ~ 580 까지 사이즈 notnsansKR-->
+    <header><?php include "top.html"?></header>                   
+    <div class="sldbox" onclick="topgo()"></div>
+    <span class="bkscreen" id="bkscreen">
+    </span>
+    <aside><?php include "login.html"?></aside>
+    <aside><?php include "join.html"?></aside>
+    <nav><?php include "menu.html"?></nav>
+    <aside><?php include "category.html"?></aside>
+    <section><?php include "search.html"?></section>
+    <main>
+        <section><?php include "banner.html"?></section>
+        <section><?php include "eventbanner.html"?></section>
+
+        <section>
+            <article><?php include "new_product.html"?></article>
+            <article><?php include "best_product.html"?></article>
+        </section>
+        
+        <section><?php include "review.html"?></section>
+    </main>
+
+    <footer><?php include "copyright.html"?></footer>
+</body>
+
+<script src="./js/index.js?v=<?php echo $v?>"></script>
+
+</html>

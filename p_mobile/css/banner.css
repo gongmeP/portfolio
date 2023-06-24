@@ -1,0 +1,17 @@
+.ba_div{
+    width: 100%;
+    height: 350px;
+    position:relative;
+}
+
+.ba_div > img{
+    width: 100%;
+    height: 350px;
+    position: absolute;
+    
+}
+
+.ba_div > img:nth-of-type(2),
+.ba_div > img:nth-of-type(3){
+    display: none;
+}
