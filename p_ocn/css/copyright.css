@@ -1,0 +1,137 @@
+@charset "utf-8";
+
+.copy_box {
+    width: 1200px;
+    height: 155px;
+    /* background-color: aquamarine; */
+    margin: 0 auto;
+}
+
+.copy_box>div {
+    float: left;
+    width: 100px;
+    height: 45px;
+    text-align: center;
+    /* border: 1px solid red; */
+    line-height: 45px;
+
+}
+
+.copy_box>div:nth-of-type(1) {
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+.copy_box>div:nth-of-type(2) {
+    width: 620px;
+    position: relative;
+    overflow: hidden;
+}
+
+.copy_box>div:nth-of-type(2)>ul {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+  
+
+}
+
+.copy_box>div:nth-of-type(2)>ul>li {
+    width: inherit;
+    height: inherit;
+    text-align: left;
+    line-height: 45px;
+    text-indent: 10px;
+    font-size: 13px;
+    color: #9F9F9F;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: bolder;
+
+}
+
+
+.copy_box>div:nth-of-type(3) {
+    position: relative;
+    width: 480px;
+
+}
+
+.copy_box>div:nth-of-type(3)>select {
+    width: 170px;
+    height: 35px;
+    margin-bottom: 3px;
+    right: 10px;
+}
+
+.copy_box>div:nth-of-type(4) {
+    height: 110px;
+    width: 1200px;
+    background-color: #ccc;
+    text-align: center;
+    font-size: 12px;
+    padding: 5px;
+}
+
+.copy_box>div:nth-of-type(4)>p {
+    height: 35px;
+    line-height: 35px;
+    font-size: 12px;
+}
+
+.corp {
+    width: 170px;
+    height: 35px;
+    margin-bottom: 3px;
+    right: 10px;
+    position: relative;
+    border: 1px solid black;
+    line-height: 35px;
+    float: right;
+    margin-top: 5px;
+    margin-right: 5px;
+    text-align: left;
+    text-indent: 8px;
+    cursor: pointer;
+    font-family: 'Noto Sans KR', sans-serif;
+ 
+    
+
+
+}
+.corp:nth-of-type(1){
+    margin-right: 0;
+}
+
+.corp>ul {
+    width: inherit;
+    height: auto;
+    border: 1px solid lightslategray;
+    
+    overflow: hidden;
+    position: absolute;
+    bottom: 35px;
+    /* transition: all 0.5s; */
+    display: none;
+    margin-bottom: -2px;
+    margin-left: -0.1px;
+
+}
+.corp > ul > li{
+
+    width: inherit;
+    height: 35px;
+    background-color: white;
+
+}
+
+
+.corp>em {
+    font-style: normal;
+    position: absolute;
+    right: 10px;
+    top: 0;
+}
+
+.corplink:hover{
+    color: blue;
+}

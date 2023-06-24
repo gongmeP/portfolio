@@ -1,0 +1,77 @@
+<meta charset="utf-8">
+<link rel="stylesheet" href="./css/user.login.css?v=8" type="text/css">
+<div class="agree_main">
+
+      <ol class="member_top">
+        <li>MEMBER-SHIP</li>
+            </ol>
+    <form onsubmit="loging()" id="user_logins" action="./loginok.php" method="post"
+        enctype="application/x-www-form-urlencoded">
+        <input type="hidden" name="key" value="ocn">
+        <div class="idbox1">
+            <ul>
+                <li>
+                    <div> 아이디 </div>
+                    <input type="text" name="user_id">
+                </li>
+                <li>
+                    <input type="submit" value="로그인">
+                </li>
+                <li>
+                    <div> 비밀번호 </div>
+                    <input type="password" name="user_pw">
+                </li>
+                <li>
+                    <input type="checkbox" id="loginchek" onclick="idsaves(this.checked)">아이디 저장하기
+                </li>
+                <li>
+                   <div onclick="membersgo()">회원가입</div>
+                    <div onclick="idgo()">아이디 찾기</div>
+                    <div onclick="passgo()">비밀번호 찾기</div>
+                </li>
+            </ul>
+
+        </div>
+    </form>
+        <!-- <form action=""> -->
+            <div class="idbox2">
+                <ul>
+                    <li>
+                        비회원 주문 조회하기
+                    </li>
+                    <li>
+                        <div> 주문자명 </div>
+                        <input type="text" name="user_id">
+                    </li>
+                    <li>
+                        <input type="submit" value="조회하기" onclick="jonono()">
+                    </li>
+                    <li>
+                        <div> 주문번호 </div>
+                        <input type="password" name="user_pw">
+                    </li>
+                    <li>
+                        ※ 주문번호와 비밀번호를 잊으신 경우, 고객센터로 문의하여 주시기 바랍니다.
+                    </li>
+                </ul>
+            </div>
+        <!-- </form> -->
+</div>
+<script src="./js/user_login.js?v=6"></script>
+<script> 
+function membersgo(){
+    location.href="./membership.html";
+}
+
+
+function idgo(){
+    alert("서비스 준비중 입니다.");
+}
+function passgo(){
+    alert("서비스 준비중 입니다.");
+}
+
+function jonono(){
+    alert("서비스 준비중 입니다.");
+}
+</script>

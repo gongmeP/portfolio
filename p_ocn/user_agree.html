@@ -1,0 +1,32 @@
+<meta charset="utf-8">
+<link rel="stylesheet" href="./css/user_agree.css?v=5" type="text/css">
+
+<ol class="member_top">
+    <li>MEMBER-SHIP</li>
+    <ul class="member_topl">
+        <li>이용약관 동의</li>
+        <li></li>
+        <li>정보입력</li>
+        <li></li>
+        <li>가입완료</li>
+    </ul>
+</ol>
+<form action="./memberinfo.html" id="ship" method="get">
+    <div class="inmain2">
+        <ul id="inul">
+            <li>약관동의</li>
+            <li><label><input type="checkbox" onclick="allchk(this.checked)"> 모든 약관을 동의하고 전체 동의합니다. (선택항목도 포함됩니다.)</label></li>
+            <li><label><input type="checkbox" name="m_agree1" value="y" class="chks"> <a style="color: red;">(필수)</a>
+                    이용약관 동의</label></li>
+            <li id="ag1"></li>
+            <li><label><input type="checkbox" name="m_agree2" value="y" class="chks"> <a style="color: red;">(필수)</a>
+                    개인정보 수집 및 이용안내</label></li>
+            <li id="ag2"></li>
+            <li><input type="button" value="다음단계" onclick="agree_next()"></li>
+        </ul>
+    </div>
+</form>
+</div>
+
+<script src="./js/user_agree.js?v=7" defer></script>
+<!-- 다음 페이지 클릭시 memberinfo.html -->

@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+.weekul {
+    width: 1200px;
+    height: 150px;
+ 
+
+}
+
+.weekul>li {
+    width: 210px;
+    height: 130px;
+    margin-top: 10px;
+    float: left;
+    position: relative;
+}
+
+.weekul>li>div{
+    width: 210px;
+    height: 30px;
+    bottom: 0;
+    background-color : black;
+    color: #fce207;
+    font-size: 12px;
+    position: absolute;
+    text-align: center;
+    line-height: 30px;
+    font-family: 'Noto Sans KR', sans-serif;
+    /* display: none; */
+    opacity: 0;
+    
+}
+
+.weekul>li:nth-of-type(1){
+    width: 150px;
+}
