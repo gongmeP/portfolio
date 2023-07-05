@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="adminvoDB">
+
+
+<select id="select1" parameterType="String" resultType="adminvo">
+select * from notice where nidx=#{value}
+</select>
+
+<select id="checks" resultType="adminvo">
+select m_id from port_ta where m_id=#{m_id}
+</select>
+
+<select id="config_select" resultType="config_formvo">
+select * from pageall where m_id=#{m_id}
+</select>
+<select id="config_select2" resultType="config_formvo">
+select * from pageall where m_id=#{m_id}
+</select>
+
+
+<insert id="member_in1">
+insert into memlist1 (midx, m_id, m_name, m_passwd, m_level, m_point, m_email, m_Ptel, m_Htel, m_addr, sms, event, m_memberdate, m_indate, m_byedate, m_hu)
+values ('0', #{m_id}, #{m_name},#{m_passwd}, #{m_level}, #{m_point}, #{m_email}, #{m_Ptel}, #{m_Htel}, #{m_addr}, #{sms}, #{event}, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, #{m_hu})
+</insert>
+
+<select id="setup_all1" parameterType="String" resultType="setup1_vo">
+select * from main_banners order by id desc limit 0, 1;
+</select>
+
+<insert id="setup_in1">
+insert into main_banners (id,banner1,link1,banner2,link2,banner3,link3,banner4,link4)
+values ('0',#{banner1},#{link1},#{banner2},#{link2},#{banner3},#{link3},#{banner4},#{link4})
+</insert>
+<insert id="setup_in2">
+insert into main_popups (id,popup_image,popup_link,popup_enabled)
+values ('0',#{popup_image},#{popup_link},#{popup_enabled})
+</insert>
+<insert id="setup_in3">
+insert into ad_banners (id,ad_banner1,ad_link1,ad_banner2,ad_link2)
+values ('0',#{ad_banner1},#{ad_link1},#{ad_banner2},#{ad_link2})
+</insert>
+
+<insert id="pd_insert1">
+ insert into product (id,pd_mainca, pd_subca, pd_code,pd_name, pd_text1, pd_pri, pd_rate, pd_s_pri, pd_stock, open_on_off, sold_on_off,pd_file1,pd_file2,pd_file3, pd_dt_text)
+  values ('0',#{pd_mainca}, #{pd_subca}, #{pd_code}, #{pd_name}, #{pd_text1}, #{pd_pri}, #{pd_rate}, #{pd_s_pri}, #{pd_stock}, #{open_on_off}, #{sold_on_off}, #{pd_file1},#{pd_file2},#{pd_file3},#{pd_dt_text})
+</insert>
+
+<insert id="datainsert">
+insert into notice (nidx,nsubject,nwriter,npass,ntext,ndate)
+values ('0',#{nsubject},#{nwriter},#{npass},#{ntext},default)
+</insert>
+
+<insert id="config_insert">
+  insert into pageall (
+    m_id, h_name, a_mail, point, reward, level, c_name, c_number, rep_name,
+    req_tel, net_tel, sub_net_tel, c_post_add, c_add, info_name, info_email,
+    moo_bk, bk_number, spay, hpay, bpay, min_point, max_point, resito,
+    delivery_company, delivery_price, coopangday, created_at, updated_at
+  )
+  values (
+    #{m_id}, #{h_name}, #{a_mail}, #{point}, #{reward}, #{level}, #{c_name},
+    #{c_number}, #{rep_name}, #{req_tel}, #{net_tel}, #{sub_net_tel},
+    #{c_post_add}, #{c_add}, #{info_name}, #{info_email}, #{moo_bk},
+    #{bk_number}, #{spay}, #{hpay}, #{bpay}, #{min_point}, #{max_point},
+    #{resito}, #{delivery_company}, #{delivery_price}, #{coopangday},
+    default, default)
+</insert>
+
+<insert id="noti_insert" parameterType="String">
+insert into notice_all (
+  nt_id, nt_adm, nt_title, nt_name, nt_file, nt_text, view_count,created_at
+)
+values (
+  0, #{nt_adm}, #{nt_title}, #{nt_name}, #{nt_file}, #{nt_text}, default, default
+)
+</insert>
+
+<select id="pd_chk1" resultType="pd_vo">
+select * from product where pd_code=#{pd_code}
+</select>
+
+<select id="noti_sel" resultType="noti_vo">
+select * from notice_all
+</select>
+
+<select id="noti_view_sel" resultType="noti_vo">
+select * from notice_all where nt_id=#{nt_id}
+</select>
+
+<select id="member_login1" resultType="memlistvo">
+select * from memlist1 where m_id=#{m_id} and m_passwd=#{m_passwd}
+</select>
+
+<update id="noti_view_count">
+update notice_all set view_count = view_count + 1 where nt_id = #{nt_id};
+</update>
+<update id="noti_view_update1">
+update notice_all set nt_text=#{nt_text},nt_title=#{nt_title} where nt_id=#{nt_id};
+</update>
+
+<update id="dataupdate1">
+update port_ta set YN='Y' where midx=#{midx}
+</update>
+
+<update id="dataupdate2">
+update port_ta set YN='NO' where midx=#{midx}
+</update>
+
+<select id="mem_update" parameterType="String" resultType="memlistvo">
+select m_id,m_name,m_level,m_point,m_hu,m_byedate from memlist1 where m_id=#{m_id}
+</select>
+
+<update id="mem_update2">
+update memlist1 set m_hu=#{m_hu},m_level=#{m_level},m_point=#{m_point} where m_id=#{m_id}
+</update>
+
+<select id="mem_idck" parameterType="String" resultType="memlistvo">
+select * from memlist1 where m_id=#{m_id}
+</select>
+
+<select id="faqlist1" parameterType="String" resultType="FAQ_vo">
+select * from FAQ
+</select>
+
+
+
+
+
+
+<delete id="mem_del">
+delete from memlist1 where m_id=#{m_id}
+</delete>
+
+<delete id="notis_del">
+delete from notice_all where nt_id=#{nt_id}
+</delete>
+
+<delete id="product_del">
+delete from product where pd_code=#{pd_code}
+</delete>
+
+
+
+</mapper>
