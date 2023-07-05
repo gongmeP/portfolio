@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="adminvoDB">
+
+
+<select id="select1" parameterType="String" resultType="adminvo">
+select * from notice where nidx=#{value}
+</select>
+
+<select id="checks" resultType="adminvo">
+select m_id from port_ta where m_id=#{m_id}
+</select>
+
+
+
+<!-- 데이터입력 -->
+<!-- 필드명 데이터 적용하는 이름이 동일하게 사용해야함 -->
+<insert id="datainsert">
+insert into notice (nidx,nsubject,nwriter,npass,ntext,ndate)
+values ('0',#{nsubject},#{nwriter},#{npass},#{ntext},default)
+
+</insert>
+
+<!-- 데이터수정 -->
+<update id="dataupdate1">
+update port_ta set YN='Y' where midx=#{midx}
+</update>
+
+<update id="dataupdate2">
+update port_ta set YN='NO' where midx=#{midx}
+</update>
+
+
+<!-- 데이터삭제 -->
+<delete id="datadelete">
+delete from notice where nidx=#{nidx}
+</delete>
+
+</mapper>
