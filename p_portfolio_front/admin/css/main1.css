@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+* {
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 15px;
+	box-sizing: border-box;
+	color: white;
+	border-radius: 4px;
+	
+}
+
+
+.main1_1 {
+	width: 100%;
+	height: 300px;
+	background-color: #161616;
+	padding: 10px;
+	top:50%;
+    left: 50%;
+	position: fixed;
+	transform: translate(-50%, -50%);
+	 
+}
+
+.login1 {
+	width: 600px;
+	height: 280px;
+	border: 1px solid white;
+	margin: 0 auto;
+	background-color: rgb(61, 60, 60);
+	padding: 40px 25px 40px 25px;
+}
+.img1 {
+	background-image: url("../img/logo.png");
+	width: 600px;
+	height : 33px;
+	background-size:30px 33px;
+	background-repeat: no-repeat;
+	z-index: 2;
+	color : black;
+	position: absolute;
+	top: -33px;
+	text-indent: 35px;
+	line-height: 33px;
+	font-size: 17px;
+	font-weight: 700;
+	
+}
+
+.login1>ul {
+	width: 500px;
+	height: 90px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.login1>ul>li {
+	height: 30px;
+	width: 250px;
+	float: left;
+}
+
+.login1>ul>li:nth-of-type(1){
+	margin-right: 100px;
+	margin-bottom: 20px;
+}
+
+.login1>ul>li>input {
+	height: 30px;
+	width: 250px;
+	text-indent: 5px;
+	color: black;
+}
+
+.login1>ul>li:nth-of-type(2) {
+	position: absolute;
+	right: 0px;
+	height: 80px;
+	width: 150px;
+}
+
+.login1>ul>li:nth-of-type(2)>input {
+	background-color: #734F4F;
+	height: 80px;
+	width: 150px;
+	font-size: 15px;
+	color: white;
+}
+
+.login1>p{
+	font-size: 12px;
+	width: 500px;
+	height: 30px;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 30px;
+}
+
+
+.login1>ul:nth-of-type(2){
+	width: 550px;
+	height: 40px;
+	
+	font-size: 12px;
+	display: flex;
+	justify-content: space-between;
+}
+.login1>ul:nth-of-type(2) > li {
+	width: 150px;
+	height: 40px;
+	line-height: 40px;
+	margin-top: 30px;
+	text-align: center;
+	cursor: pointer;
+}
+

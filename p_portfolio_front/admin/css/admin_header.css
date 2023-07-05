@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+.top_main{
+	width: 1100px;
+	height: 50px;
+	background-color: rgb(61,60,60);
+	margin: 0 auto;
+	
+}
+
+.top_main    * {
+	box-sizing: border-box;
+}
+
+.top_img {
+	background-image: url("../img/logo.png");
+	width: 180px;
+	height: 50px;
+	background-size: 30px 30px;
+	background-repeat: no-repeat;
+	background-position:5px 10px;
+	color: white;
+	top: -33px;
+	text-indent: 40px;
+	line-height: 50px;
+	font-size: 12px;
+	font-weight: 700;
+	float:left;
+}
+
+.userlog{
+	width: 300px;
+	height: 50px;
+	float: right;
+	display: flex;
+	line-height: 50px;
+	font-size: 12px;
+	justify-content: space-around;
+	color: white;
+}
+
+.userlog > li {
+	cursor: pointer;
+}

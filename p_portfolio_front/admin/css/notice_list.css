@@ -1,0 +1,179 @@
+@charset "UTF-8";
+
+.notice_list_main {
+	width: 1000px;
+	height: auto;
+	margin: 0 auto;
+}
+
+.ntl_div1 {
+	width: 1000px;
+	height: 30px;
+	line-height: 30px;
+	border-bottom: 3px solid rgb(81, 61, 61);
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	color: #333;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+.ntl_nemo {
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 15px;
+	color: red;
+}
+
+.ntl_ul1 {
+	width: 1000px;
+	height: 40px;
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid rgb(81, 61, 61);
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 12px;
+	color: #333;
+	
+}
+
+.ntl_ul1>li {
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+}
+
+.ntl_ul1>li:nth-of-type(1) {
+	width: 30px;
+}
+
+.ntl_ul1>li:nth-of-type(2) {
+	width: 70px;
+}
+
+.ntl_ul1>li:nth-of-type(3) {
+	width: 550px;
+}
+
+.ntl_ul1>li:nth-of-type(4) {
+	width: 100px;
+}
+
+.ntl_ul1>li:nth-of-type(5) {
+	width: 150px;
+}
+
+.ntl_ul1>li:nth-of-type(6) {
+	width: 100px;
+}
+
+.ntl_ul2 {
+	width: 1000px;
+	height: 40px;
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid black;
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 12px;
+	color: #333;
+}
+
+.ntl_ul2>li:nth-of-type(1) {
+	width: 1000px;
+	text-align: center;
+	line-height: 40px;
+}
+
+.ntl_li1 {
+	text-align: left !important;
+	text-indent: 5px;
+}
+
+.ntl_btn1 {
+	
+	width: 316px;
+	text-align: center;
+	float: right;
+	margin-top: 20px;
+	
+}
+
+.ntl_btn1 > input {
+	color: white;
+	width: 150px;
+	height: 45px;
+	background-color: rgb(132, 6, 6);
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 13px;
+	
+}
+
+.ntl_btn1 > input:nth-of-type(2){
+	background-color: rgb(81, 61, 61);
+	margin-left: 10px;
+	
+}
+
+
+.ntl_page{
+	width: 150px;
+	height: 30px;
+	margin: 0 auto;
+	font-size: 13px;
+	color: #333;
+	display: flex;
+	margin-top: 70px;
+	border-bottom: 0;
+	
+}
+
+.ntl_page > li {
+	width: 30px;
+	height: 30px;
+	border: 1px solid black;
+	cursor: pointer;
+	line-height: 30px;
+	text-align: center;
+}
+
+
+
+.ntl_page > li:nth-of-type(1){
+	letter-spacing: -4px;
+}
+.ntl_page > li:nth-of-type(5){
+	letter-spacing: -4px;
+}
+
+
+
+#notidel_frm{
+	height: 520px;
+}
+
+.cucucuser{
+	cursor: pointer;
+	text-align: left !important;
+	text-indent: 10px;
+}
+
+.gongji{
+	border-bottom: 3px solid rgb(81, 61, 61);
+
+	color: #333;
+	font-weight: bold;
+}
+
+.gongji:nth-of-type(1) {
+	border-top : 2px solid rgb(81, 61, 61);
+}
+
+.bordgogogo{
+	font-size: 15px;
+	font-weight: bold;
+}
+
+
+
+
+
+

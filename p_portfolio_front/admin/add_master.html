@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="./css/def.css?v=1">
+<link rel="stylesheet" type="text/css" href="./css/add_master.css?v=6">
+</head>
+<body>
+	<section>
+		<div class="img1"></div>
+		<form action="./add_master_insert.do" id="joinform" method="post">
+			<input type="hidden" value="N" name="YN">
+			<div class="add_master_main">
+				<div class="login1">
+					<div class="img1">ADMINSTRATOR ADD</div>
+
+					<ul>
+						<li class="li1">아이디 및 패스워드 정보</li>
+						<li>
+							<input type="text" placeholder="생성할 관리자 아이디를 입력하세요." name="m_id">
+						</li>
+						<li>
+							<input type="button" value="중복체크" onclick="idchk()">
+						</li>
+						<li>
+							<input type="password" placeholder="접속할 패스워드를 입력하세요." name="m_passwd">
+						</li>
+						<li>
+							<input type="password" placeholder="동일한 패스워드를 입력하세요." id="m_passwd2">
+						</li>
+						<li class="li1">관리자 기본정보 입력</li>
+						<li>
+							<input type="text" placeholder="담당자 이름을 입력하세요" name="m_name">
+						</li>
+						<li>
+							<input type="text" placeholder="담당자 이메일을 입력하세요" name="m_email">
+						</li>
+						<li>
+							<input type="text" class="tel" placeholder="010" name="m_hp1" onkeyup="this.value=this.value.replace(/[^0-9]/g,'')" maxlength="3">
+						</li>
+						<li>-</li>
+						<li>
+							<input type="text" class="tel" placeholder="1234" name="m_hp2" onkeyup="this.value=this.value.replace(/[^0-9]/g,'')" maxlength="4">
+						</li>
+						<li>-</li>
+						<li>
+							<input type="text" class="tel" placeholder="5678" name="m_hp3" onkeyup="this.value=this.value.replace(/[^0-9]/g,'')" maxlength="4">
+						</li>
+						<li>관리자 담당부서 및 직책</li>
+						<li>
+							<select class="sel" name="buser">
+								<option value="">담당자 부서를 선택하세요.</option>
+								<option value="임원">임원</option>
+								<option value="전산">전산팀</option>
+								<option value="디자인">디자인팀</option>
+								<option value="CS">CS팀</option>
+								<option value="MD">MD팀</option>
+								<option value="영업">영업팀</option>
+							</select>
+						</li>
+						<li>
+							<select class="sel" name="postion">
+								<option value="">담당자 직책을 선택하세요.</option>
+								<option value="대표">대표</option>
+								<option value="부장">부장</option>
+								<option value="팀장">팀장</option>
+								<option value="과장">과장</option>
+								<option value="대리">대리</option>
+								<option value="주임">주임</option>
+								<option value="사원">사원</option>
+							</select>
+						</li>
+						<li>*가입완료 후 전산 담당자가 확인 후 로그인 할 수 있습니다.</li>
+						<li>
+							<div>
+								<input type="button" value="관리자 등록" onclick="joingo()"> 
+								<input type="button" value="등록 취소" onclick="joinnono()">
+
+							</div>
+						</li>
+					</ul>
+
+				</div>
+			</div>
+		</form>
+	</section>
+</body>
+<script type="text/javascript" src="./js/add_master.js?v=5>" defer="defer"></script>
+</html>

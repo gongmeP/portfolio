@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+.notice_write_main {
+	width: 1000px;
+	height: auto;
+	margin: 0 auto;
+}
+
+.ntw_div1 {
+	width: 1000px;
+	height: 30px;
+	line-height: 30px;
+	border-bottom: 3px solid rgb(81, 61, 61);
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	color: #333;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+.ntw_nemo {
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 15px;
+	color: red;
+}
+
+.ntw_ul1 {
+	width: 1000px;
+	height: 40px;
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid rgb(81, 61, 61);
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 12px;
+	color: #333;
+}
+
+.ntw_ul3 {
+	width: 1000px;
+	height: 550px;
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid black;
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 13px;
+	color: #333;
+	line-height: 40px;
+}
+
+.ntw_ul3>li:nth-of-type(1) {
+	width: 250px;
+	text-align: left;
+}
+
+.ntw_ul3>li:nth-of-type(2) {
+	width: 750px;
+}
+
+.ntw_ul2 {
+	width: 1000px;
+	height: 40px;
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid black;
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 13px;
+	color: #333;
+	line-height: 40px;
+}
+
+.ntw_ul2>li:nth-of-type(1) {
+	width: 250px;
+	text-align: left;
+}
+
+.ntw_ul2>li:nth-of-type(2) {
+	width: 750px;
+}
+
+.ntw_btn1 {
+	width: 370px;
+	text-align: center;
+	float: right;
+	margin-top: 20px;
+}
+
+.ntw_btn1>input {
+	color: white;
+	width: 150px;
+	height: 45px;
+	background-color: rgb(132, 6, 6);
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 13px;
+}
+
+.ntw_btn1>input:nth-of-type(2) {
+	background-color: rgb(81, 61, 61);
+	margin-left: 10px;
+}
+
+.ntw_btn1>input:nth-of-type(3) {
+	background-color: rgb(81, 61, 61);
+	margin-left: 10px;
+}
+
+.ntw_texts {
+	width: 700px !important;
+	height: 540px !important;
+	padding: 10px;
+}
+
+.ntw_input1 {
+	width: 600px;
+	height: 30px;
+	vertical-align: 2px;
+	text-indent: 5px;
+}
+
+.ntw_input2 {
+	width: 200px;
+	height: 30px;
+	vertical-align: 2px;
+}

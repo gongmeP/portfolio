@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+.config_main {
+	width: 1000px;
+	height: auto;
+	font-family: 'Noto Sans KR', sans-serif;
+	margin: 0 auto;
+	box-sizing: border-box;
+	
+	
+	
+}
+
+.config_ul1 {
+	
+	width: 1000px;
+	height: auto;
+	
+	
+	
+}
+.config_ul1 > li:nth-of-type(1),
+.config_ul1 > li:nth-of-type(6),
+.config_ul1 > li:nth-of-type(12)
+{
+	margin-top: 20px;
+	height: 30px;
+	line-height: 30px;
+	font-weight: bolder;
+	color: #333333;
+}
+.config_ul1 > li {
+	text-indent : 3px;
+	width: inherit;
+	height: 40px;
+	border-bottom: 1px solid black;
+	line-height: 40px;
+	box-sizing: border-box;
+	display: flex;
+	font-size: 15px;
+	
+}
+
+.config_ul1 > li > div {
+	width: 150px;
+	height: inherit;
+}
+
+
+
+.config_ul1 > li > input {
+	width: 200px;
+	height: 30px;
+	box-sizing: border-box;
+	margin-top: 5px;
+	text-indent: 5px;
+}
+
+.jongdiv{
+	width: 500px !important;
+	height : 40px;
+	display: flex;
+}
+.jongdiv > div{
+	width: 150px;
+	height: 40px;
+}
+
+.jongdiv> input {
+	margin-top: 5px;
+	height: 30px;
+	box-sizing: border-box;
+	width: 200px;
+	text-indent: 5px;
+}
+
+
+.parsiq {
+	width: 80px !important;
+}
+.labelss0{
+	width: 120px;
+}
+.labelss{
+	width: 100px;
+}
+
+.config_btnall{
+	width: 1000px;
+	height: 45px;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+.config_btn{
+	
+	width: 150px;
+	height: 45px;
+	margin: 0 auto;
+	color: white;
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 13px;
+	font-weight: bolder;
+	background-color: black;
+	
+}
+.config_btn:nth-of-type(1){
+	background-color: rgb(61, 60, 60);
+}
+
+
+.pagename{
+	width: 250px !important;
+	
+}
+
+.adminmail{
+	width:300px !important;
+}

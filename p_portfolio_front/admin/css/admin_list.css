@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+.list_main {
+	width: 1100px;
+	height: auto;
+	box-sizing: border-box;
+	display: inline-block;
+	margin: 0 auto;
+}
+
+.list_ul1 {
+	width: inherit;
+	height: auto;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+.list_ul1>li {
+	width: inherit;
+	line-height: 30px;
+}
+
+.list_ul1>li:nth-of-type(1) {
+	text-indent: 10px;
+	font-size: 15px;
+	    text-align: left;
+}
+
+.list_ul1 em {
+	font-style: normal;
+	color: red;
+}
+
+.list_ul2 {
+	font-family: 'Noto Sans KR', sans-serif;
+	width: inherit;
+	height: inherit;
+	display: flex;
+	justify-content: space-around;
+	line-height: 30px;
+	text-align: center;
+	color: wheat;
+	background-color: rgb(81, 61, 61);
+	font-size: 13px;
+}
+
+.list_ul2>li {
+	border-right-style: inset;
+	border-right-width: 1px;
+	border-right-color: wheat;
+}
+
+.list_ul2>li:nth-of-type(1), .list_data_ul>li:nth-of-type(1) {
+	width: 50px;
+}
+
+.list_ul2>li:nth-of-type(2), .list_data_ul>li:nth-of-type(2) {
+	width: 120px;
+}
+
+.list_ul2>li:nth-of-type(3), .list_data_ul>li:nth-of-type(3) {
+	width: 140px;
+}
+
+.list_ul2>li:nth-of-type(4), .list_data_ul>li:nth-of-type(4) {
+	width: 150px;
+}
+
+.list_ul2>li:nth-of-type(5), .list_data_ul>li:nth-of-type(5) {
+	width: 230px;
+}
+
+.list_ul2>li:nth-of-type(6), .list_data_ul>li:nth-of-type(6) {
+	width: 100px;
+}
+
+.list_ul2>li:nth-of-type(7), .list_data_ul>li:nth-of-type(7) {
+	width: 80px;
+}
+
+.list_ul2>li:nth-of-type(8), .list_data_ul>li:nth-of-type(8) {
+	width: 120px;
+}
+
+.list_ul2>li:nth-of-type(9), .list_data_ul>li:nth-of-type(9) {
+	width: 110px;
+}
+
+.li3 {
+	text-align: center;
+}
+
+.list_data_ul {
+	font-family: 'Noto Sans KR', sans-serif;
+	width: inherit;
+	height: inherit;
+	display: flex;
+	justify-content: space-around;
+	line-height: 30px;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+.list_data_ul {
+	border-right: 1px solid black;
+	border-left: 1px solid black;
+	border-top: 1px solid rgb(81, 61, 61);
+	font-size: 12px;
+}
+
+.list_data_ul:nth-last-of-type(1) {
+	border-bottom: 1px solid black;
+}
+
+.list_data_ul>li>div {
+	width: 45px;
+	height: 20px;
+	background-color: black;
+	float: left;
+	margin-left: 7.5px;
+	margin-top: 5px;
+	color: white;
+	line-height: 20px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.li3 {
+	border-right: 1px solid black;
+	border-left: 1px solid black;
+	border-bottom: 1px solid black;
+}

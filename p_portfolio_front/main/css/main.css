@@ -1,0 +1,80 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+ul,ol,dl {
+    list-style: none;
+}
+
+
+
+body{
+    font-size: 12px;
+   
+
+}
+
+.header_css{
+    height: auto;
+   
+   
+}
+
+
+.nav_css {
+    height: 50px;
+   
+   
+}
+
+.main_css{
+    height: auto;
+}
+
+.banner_css{
+    height: 450px;
+   
+}
+
+.new_pro_css{
+    height: 1442px;
+   
+   
+    margin-bottom: 30px;
+}
+
+.AD_css{
+    height: 180px;
+   
+   
+    margin-bottom: 30px;
+    
+}
+
+.MD_css{
+    height: auto;
+    
+    margin-bottom: 30px;
+}
+
+
+.tran_css{
+    height: 450px;
+  
+    margin-bottom: 30px;
+    
+}
+
+
+
+.foo{
+    height: 210px;
+
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+   
+   
+}
